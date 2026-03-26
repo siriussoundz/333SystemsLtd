@@ -207,7 +207,18 @@
       color: rgba(255,255,255,0.04);
       letter-spacing: -0.05em;
     }
-
+    .card-image {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 12px;
+        opacity: 0.95;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .card-image:hover {
+        transform: scale(1.02);
+        opacity: 1;
+    }
     .availability {
       display: inline-flex;
       gap: 10px;
@@ -539,10 +550,12 @@
           <article class="card">
             <h3>333 LifeOS</h3>
             <p>Utility concepts and helper apps focused on simplifying everyday workflows, diagnostics and user-friendly tooling.</p>
+            <img src="images/LifeOSx4.png" alt="333 LifeOS Applications" class="card-image">
           </article>
           <article class="card">
             <h3>Audio & AI tooling</h3>
             <p>Exploration of AI-assisted music production tools, plugin concepts and workflow enhancements for creators.</p>
+            <img src="images/333-VST.png" alt="333 AI Assistant VST Interface" class="card-image">
           </article>
           <article class="card">
             <h3>Insofix</h3>
