@@ -136,6 +136,12 @@
       cursor: default;
       border: 1px solid rgba(255,255,255,0.05);
     }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     
     .hero {
       padding: 76px 0 48px;
@@ -305,6 +311,16 @@
       padding: 24px;
     }
 
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card-content {
+      margin-bottom: 20px;
+    }
+    
     .card h3 {
       font-size: 1.2rem;
       margin-bottom: 10px;
@@ -578,30 +594,40 @@
           <p>333 Systems is also a home for practical tools, prototypes and product experiments developed from real needs.</p>
         </div>
         <div class="grid-3">
+
           <article class="card">
-            <h3>333 LifeOS</h3>
-            <p>Utility concepts and helper apps focused on simplifying everyday workflows, diagnostics and user-friendly tooling.</p>
-            <img src="images/LifeOSx4.png" alt="333 LifeOS Applications" class="card-image">
+            <div class="card-content">
+              <h3>333 LifeOS</h3>
+              <p>Utility concepts and helper apps focused on simplifying everyday workflows, diagnostics and user-friendly tooling.</p>
+              <img src="images/LifeOSx4.png" alt="333 LifeOS Applications" class="card-image">
+            </div>
             <a class="project-disabled">
-            Free beta versions coming soon
-          </a>
-          </article>
-          <article class="card">
-            <h3>Audio & AI tooling</h3>
-            <p>Exploration of AI-assisted music production tools, plugin concepts and workflow enhancements for creators.</p>
-            <img src="images/333-VST.png" alt="333 AI Assistant VST Interface" class="card-image">
-            <a class="project-disabled">
-            Free beta versions coming soon
-          </a>
-          </article>
-          <article class="card">
-            <h3>Insofix</h3>
-            <p>Supporting the build-out of a service business in insulation removal, digital presence, operations and practical rollout.</p>
-            <img src="images/insofix-site-screenshot.png" alt="Insofix Insulation Specialists" class="card-image">
-            <a class="project-cta" href="https://insofixltd.co.uk" target="_blank">
-            Visit Insofix
+              Free beta versions — coming soon
             </a>
           </article>
+        
+          <article class="card">
+            <div class="card-content">
+              <h3>Audio & AI tooling</h3>
+              <p>Exploration of AI-assisted music production tools, plugin concepts and workflow enhancements for creators.</p>
+              <img src="images/333-VST.png" alt="333 AI Assistant VST Interface" class="card-image">
+            </div>
+            <a class="project-disabled">
+              Free beta versions — coming soon
+            </a>
+          </article>
+        
+          <article class="card">
+            <div class="card-content">
+              <h3>Insofix</h3>
+              <p>Supporting the build-out of a service business in insulation removal, digital presence, operations and practical rollout.</p>
+              <img src="images/insofix-site-screenshot.png" alt="Insofix Insulation Specialists" class="card-image">
+            </div>
+            <a class="project-cta" href="https://insofixltd.co.uk" target="_blank">
+              Visit Insofix
+            </a>
+          </article>
+        
         </div>
       </div>
     </section>
