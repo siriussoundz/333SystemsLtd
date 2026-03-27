@@ -107,18 +107,20 @@
     
     .project-cta {
       display: block;
-      width: 100%;
-      margin-top: 15px;
-      padding: 12px 0;
+      width: calc(100% + 40px); /* expands beyond padding */
+      margin: 20px -20px -20px -20px; /* pulls it to edges */
+      padding: 14px 0;
       text-align: center;
       background: #D91F26;
       color: #fff;
-      border-radius: 0 0 12px 12px;
       text-decoration: none;
       font-weight: 600;
+    
+      border-radius: 0 0 12px 12px; /* bottom only */
+    
       transition: all 0.2s ease;
     }
-
+    
     .project-cta:hover {
       background: #ff2a2f;
     }
